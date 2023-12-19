@@ -1,0 +1,45 @@
+Q4. Write CSS to show numbers as shown in the figure, without altering the html file
+
+body {
+            margin: 40px;
+        }
+
+        .box{
+            background-color: #444;
+            color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            font-size: 150%;
+            order: 1;            
+        }
+	
+	/* Used this media query to color boxes in even order. */
+
+        .box:nth-child(even){
+            background-color: #ccc;
+            color: #000;
+        }
+
+        .container{
+            width: 600px;
+            display: grid;
+            grid-template-columns: repeat(6,100px);
+            grid-gap: 10px;
+        }
+	
+	/*when we use Order property low value will come first and high value will go last. */
+	 
+	
+        .box1{
+            order: 3;
+        }
+
+        .box2{
+            order: 6;
+        }
+        .box8{
+            order: 2;
+        }
+
+
+

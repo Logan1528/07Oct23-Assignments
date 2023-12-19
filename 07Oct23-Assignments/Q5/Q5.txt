@@ -1,0 +1,47 @@
+Q5. Explain the difference between justify-items and justify-self using code examples.
+
+<style>
+        body{
+            margin: 40px;
+        }
+
+        .main{
+            display: grid;                                        
+            grid-gap: 20px;
+
+            /* Justify Items are used to align the container to left,right,center,bottom,end*/
+
+            justify-items: end;        
+        }
+        .box{
+            background-color: #ed8787;
+            color: #493f3f;
+            border-radius: 5px;
+            padding: 20px;
+            font-size: 150%;                          
+        }
+
+        .box1{
+
+            /* justify-self is used to align specific content to left,right,center,bottom,end*/
+
+            justify-self: start;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="main">
+    <div class="box1 box">Box1</div>
+    <div class="box2 box">Box2</div>
+
+    <div class="one box">One</div>
+    <div class="two box">Two</div>
+    </div>
+
+
+
+
+
+
